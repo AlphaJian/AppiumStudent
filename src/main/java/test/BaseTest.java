@@ -41,6 +41,7 @@ public class BaseTest {
         // Set job name on Sauce Labs
         String userDir = System.getProperty("user.dir");
         String appPath = userDir + localApp;
+        appPath = "/Users/ken.zhang/Documents/UITest/AppiumStudent/alo7-student.app";
         capabilities.setCapability("app", appPath);
         driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
